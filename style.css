@@ -18,8 +18,75 @@
     --textP: #7a7a7a;
     --textTitle: #902729;
     /* Font-size */
-    --font-sizeTitle: 35px;
-    --font-sizeSubTitle: 25px;
-    --font-sizeP: 17px;
+    --font-sizeTitle: 2.5rem;
+    --font-sizeSubTitle: 2rem;
+    --font-sizeP: 1.1rem;
     --fontStyle: 'Lato', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--navBack);
+    width: 100vw;
+}
+
+.nav-left {
+    display: flex;
+    gap: 20px;
+    padding-right: 60px;
+}
+
+.inicio {
+    font-weight: 700;
+    color: var(--textHover);
+    text-decoration: none;
+    font-size: var(--font-sizeP);
+    font-family: var(--fontStyle);
+}
+
+.nav-left #anchor{
+    text-decoration: none;
+    font-family: var(--fontStyle);
+    color: var(--textWhite);
+    font-size: var(--font-sizeP);
+    transition: .5s;
+}
+
+.nav-left #anchor:hover{
+    color: var(--textHover);
+}
+
+.button-search {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border: none;
+    background-color: transparent;
+    transition: .5s;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.search{
+    color: var(--textWhite);
+    font-size: var(--font-sizeP);
+    max-width: 15px;
+    max-height: 15px;
+}
+
+.button-search:hover{
+    background-color: var(--textHover);
+    transform: 10;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
 }
