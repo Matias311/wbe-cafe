@@ -1,0 +1,25 @@
+:root {
+    /* Background colors */
+    --colorBack: #fff;
+    --footerBack: #f9f9f9;
+    --cartaBack: #f8f8f8;
+    --resaltadoMensaje: #ffd400;
+    --detallesCarta: #d5ba7f;
+    --redesIconos: #c0a789;
+    --whatsAppIcon: #20c453;
+    --mainText: #90272996;
+    --bottonBack: #902729;
+    --navBack: #680a0a;
+    /* Text colors */
+    --textWhite: #fff;
+    --textKK: #d5ba7f;
+    --textHover: #c0a789;
+    --textSubTitle: #ac8e4d;
+    --textP: #7a7a7a;
+    --textTitle: #902729;
+    /* Font-size */
+    --font-sizeTitle: 35px;
+    --font-sizeSubTitle: 25px;
+    --font-sizeP: 17px;
+    --fontStyle: 'Lato', sans-serif;
+}
