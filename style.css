@@ -30,6 +30,12 @@
     margin: 0;    
 }
 
+body{
+    background-color: var(--cartaBack);
+}
+
+    /* Nav */
+
 nav{
     display: flex;
     align-items: center;
@@ -40,11 +46,19 @@ nav{
 
 .nav-left {
     display: flex;
-    gap: 20px;
-    padding-right: 60px;
+    gap: 1.1rem;
+    padding-right: 3rem;
 }
 
-.inicio {
+.nav-left a {
+    text-decoration: none;
+    font-family: var(--fontStyle);
+    color: var(--textWhite);
+    font-size: var(--font-sizeP);
+    transition: .5s;
+}
+
+a:first-child {
     font-weight: 700;
     color: var(--textHover);
     text-decoration: none;
@@ -52,41 +66,83 @@ nav{
     font-family: var(--fontStyle);
 }
 
-.nav-left #anchor{
-    text-decoration: none;
-    font-family: var(--fontStyle);
-    color: var(--textWhite);
-    font-size: var(--font-sizeP);
-    transition: .5s;
-}
-
-.nav-left #anchor:hover{
+.nav-left a:hover{
     color: var(--textHover);
 }
 
 .button-search {
     position: absolute;
-    right: 20px;
-    top: 15px;
+    right: 1.1rem;
+    top: 0.5rem;
     border: none;
     background-color: transparent;
     transition: .5s;
-    width: 15px;
-    height: 15px;
+    width: 1rem;
+    height: 1rem;
     cursor: pointer;
 }
 
 .search{
     color: var(--textWhite);
     font-size: var(--font-sizeP);
-    max-width: 15px;
-    max-height: 15px;
+    max-width: 1rem;
+    max-height: 1rem;
 }
 
 .button-search:hover{
     background-color: var(--textHover);
     transform: 10;
-    width: 35px;
-    height: 35px;
-    border-radius: 25px;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+}
+
+    /* Main */
+
+    /* Introduccion */
+
+.title{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    justify-self: center;
+    align-items: center;
+    padding-top: 2.2rem;
+}
+
+.title h1{
+    font-family: var(--fontStyle);
+    font-size: var(--font-sizeSubTitle);
+    color: var(--textSubTitle);
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.divider hr{
+    height: 0.2rem;
+    width: 18rem;
+    background-color: var(--detallesCarta);
+    border: none;
+}
+
+.divider .cafe{
+    color: var(--detallesCarta);
+    font-size: 1.6rem;
+}
+
+.title p {
+    font-family: var(--fontStyle);
+    font-size: var(--font-sizeP);
+    text-align: center;
+    padding-top: 1rem;
+    line-height: 2rem;
+    color: var(--textP);
 }
