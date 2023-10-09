@@ -18,9 +18,10 @@
     --textP: #7a7a7a;
     --textTitle: #902729;
     /* Font-size */
-    --font-sizeTitle: 2.5rem;
-    --font-sizeSubTitle: 2rem;
+    --font-sizeTitle: 2rem;
+    --font-sizeSubTitle: 1.5rem;
     --font-sizeP: 1.1rem;
+    --font-sizeCarta: 1.3rem;
     --fontStyle: 'Lato', sans-serif;
 }
 
@@ -41,7 +42,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     background-color: var(--navBack);
-    width: 100vw;
+    width: 100%;
 }
 
 .nav-left {
@@ -119,6 +120,8 @@ a:first-child {
     text-align: center;
 }
 
+    /* Divider */
+
 .divider{
     display: flex;
     justify-content: center;
@@ -138,6 +141,8 @@ a:first-child {
     font-size: 1.6rem;
 }
 
+    /* Fin del divider */
+
 .title p {
     font-family: var(--fontStyle);
     font-size: var(--font-sizeP);
@@ -145,4 +150,94 @@ a:first-child {
     padding-top: 1rem;
     line-height: 2rem;
     color: var(--textP);
+}
+
+    /* Divider de nuestra carta */
+
+.dividerCarta{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.dividerCarta img {
+    filter: inherit;
+    border-radius: 0.7rem;
+}
+
+.dividerCarta h2{
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--textWhite);
+    position: absolute;
+    font-family: var(--fontStyle);
+    font-size: var(--font-sizeSubTitle);
+}
+
+.dividerCarta span{
+    text-decoration: underline;
+}
+
+    /* Carta */
+
+.carta{
+    padding-top: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-carta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title-carta hr{
+    height: 0.1rem;
+    width: 10rem;
+    border-top: dotted 0.4rem;
+    color: var(--detallesCarta);
+}
+
+.title-carta h1{
+    font-family: var(--fontStyle);
+    font-size: var(--font-sizeTitle);    
+    color: var(--mainText);
+    font-weight: 800;
+}
+
+    /* Menu */
+
+.carta-menu{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1.7rem;
+}
+
+.carta-menu div {
+    text-align: center;
+}
+
+.carta-menu div img{
+    border-radius: 50%;
+    border: 5px solid var(--detallesCarta);
+    transition: .5s;
+}
+
+.carta-menu div img:hover{
+    transform: scale(1.1);;
+}
+
+.carta-menu div h2{
+    padding-top: 0.7rem;
+    font-size: var(--font-sizeCarta);
+    font-family: var(--fontStyle);
+    color: var(--textSubTitle);
 }
