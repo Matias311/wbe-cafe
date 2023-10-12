@@ -241,3 +241,113 @@ a:first-child {
     font-family: var(--fontStyle);
     color: var(--textSubTitle);
 }
+
+    /* Destacados */
+
+.destacados{
+    padding-top: 1.7rem;
+}
+
+.carta-destacados {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 1.1rem;
+    padding-top: 2rem;
+    
+}
+
+    /* Slider */
+
+.slider-container{
+    max-width: 400px;
+    position: relative;
+}
+
+.slider-container i{
+    color: var(--textSubTitle);
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    cursor: pointer;
+    font-size: var(--font-sizeSubTitle);
+}
+
+.slider-container i:first-child{
+    left: -2.2rem;
+}
+
+.slider-container i:last-child{
+    right: -2.2rem;
+}
+
+.slider{
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    border-radius: 2%;
+}
+
+.slider img {
+    border-radius: 2%;
+    width: 400;
+    margin-left: 1rem;
+}
+
+.slider img:first-child{
+   margin-left: 0rem;
+}
+
+.texto-destacado{
+    width: 30%;
+}
+
+.texto-destacado h1{
+    text-align: center;
+    font-family: var(--fontStyle);
+    font-size: var(--font-sizeTitle);
+    color: var(--textSubTitle);
+    padding-bottom: 2rem;
+}
+
+.texto-destacado h1 span{
+    text-decoration: underline;
+}
+
+.texto-destacado p {
+    line-height: 2rem;
+    font-family: var(--fontStyle);
+    font-size: var(--font-sizeP);
+    color: var(--textP);
+    text-align: start;
+}
+
+.texto-destacado p span {
+    font-weight: 700;
+}
+
+.texto-destacado a {
+    text-decoration: none;
+    background-color: var(--bottonBack);
+    color: var(--textWhite);
+    font-family: var(--fontStyle);
+    font-size: var(--font-sizeP);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 5%;
+    transition: .5s;
+}
+
+.texto-destacado a:hover{
+    background-color: var(--textSubTitle);
+}
