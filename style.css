@@ -31,10 +31,6 @@
     margin: 0;    
 }
 
-body{
-    background-color: var(--cartaBack);
-}
-
     /* Nav */
 
 nav{
@@ -183,7 +179,7 @@ a:first-child {
     /* Carta */
 
 .carta{
-    padding-top: 1.7rem;
+    margin-top: 1.7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,7 +241,7 @@ a:first-child {
     /* Destacados */
 
 .destacados{
-    padding-top: 1.7rem;
+    margin-top: 1.7rem;
 }
 
 .carta-destacados {
@@ -350,4 +346,78 @@ a:first-child {
 
 .texto-destacado a:hover{
     background-color: var(--textSubTitle);
+}
+
+    /* Caracteristicas de la pagina Web */
+
+.container-caracteristicas{
+    background-color: var(--cartaBack);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    height: 100px;
+    width: 80%;
+}
+
+.container-caracteristicas a {
+    font-family: var(--fontStyle);
+    font-size: var(--font-sizeCarta);
+    background-color: var(--bottonBack);
+    color: var(--textWhite);
+    text-align: center;
+    padding: 0.6rem 1.2rem;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.container-caracteristicas a:hover{
+    background-color: var(--detallesCarta);
+}
+
+    /* Qr code */
+
+.container-qr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.container-qr p{
+    padding-top: 0.2rem;
+    font-size: var(--font-sizeP);
+    font-family: var(--fontStyle);
+    color: var(--textP);
+}
+
+    /* Ver mas info section */
+
+.vermasinfo-container {
+    background-color: var(--resaltadoMensaje);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    height: 100px;
+    width: 80%;
+}
+
+.vermasinfo-container h3{
+    text-align: center;
+    font-family: var(--fontStyle);
+    font-size: var(--font-sizeCarta);
+    color: var(--textP);
+}
+
+.vermasinfo-container a {
+    text-decoration: none;
+    font-family: var(--fontStyle);
+    font-size: var(--font-sizeCarta);
+    color: var(--textP);    
 }
