@@ -95,14 +95,10 @@ a:first-child {
 }
 
 .mobile {
-    font-size: var(--font-sizeCarta);
-    color: var(--textWhite);
     display: none;
 }
 
 .cerrar {
-    font-size: var(--font-sizeCarta);
-    color: var(--textWhite);
     display: none;
 }
     /* Main */
@@ -305,7 +301,7 @@ a:first-child {
 
 .slider img {
     border-radius: 2%;
-    width: 400;
+    width: 400px;
     margin-left: 1rem;
 }
 
@@ -484,9 +480,12 @@ footer{
         justify-content: center;
         align-items: end;
         background-color: var(--navBack);
-        padding: 6rem 2rem;
+        padding: 6rem 2rem 5rem 0rem;
         width: 100%;
         display: none;
+    }
+    .nav-left a {
+        text-align: end;
     }
     .button-search{
         position: absolute;
@@ -494,7 +493,6 @@ footer{
         right: 5rem;
     }
     .mobile{
-        display: none;
         position: absolute;
         top: 2rem;
         right: 2rem;
@@ -509,7 +507,7 @@ footer{
         width: var(--font-sizeCarta);
         height: var(--font-sizeCarta);
         display: none;
-    }
+    }    
     .mostrar{
         display: flex;
     }
@@ -517,7 +515,7 @@ footer{
         width: 90%;
     }
     .divider hr{
-        width: 10rem;
+        width: 5rem;
     }
     .dividerCarta img{
         border-radius: 0px;
@@ -528,7 +526,10 @@ footer{
         font-size: 1rem;
     }
     .title-carta hr{
-        width: 5rem;
+        width: 3rem;
+    }
+    .title-carta h1{
+        font-size: var(--font-sizeSubTitle);
     }
     .carta-menu{
         flex-wrap: wrap;
