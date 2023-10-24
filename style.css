@@ -517,7 +517,7 @@ footer{
         width: 90%;
     }
     .divider hr{
-        width: 10rem;
+        width: 5rem;
     }
     .dividerCarta img{
         border-radius: 0px;
@@ -527,8 +527,20 @@ footer{
     .dividerCarta h2{
         font-size: 1rem;
     }
+    .title-carta{
+        gap: 1rem;
+    }
     .title-carta hr{
         width: 5rem;
+    }
+    .title-carta h1{
+        font-size: var(--font-sizeCarta);
+    }
+    .slider-container{
+        max-width: 250px;
+    }
+    .slider-container img{
+        width: 250px;
     }
     .carta-menu{
         flex-wrap: wrap;
@@ -549,6 +561,9 @@ footer{
     }
     .container-caracteristicas{
         width: 100%;
+    }
+    .container-qr{
+        text-align: center;
     }
     .vermasinfo-container{
         width: 100%;
