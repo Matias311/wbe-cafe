@@ -23,6 +23,10 @@
     --font-sizeP: 1.1rem;
     --font-sizeCarta: 1.3rem;
     --fontStyle: 'Lato', sans-serif;
+    /* Font-size Responsive */
+    --font-text-responsive-title: 1.5rem;
+    --font-text-responsive-sub: 1.3rem;
+    --font-text-responsive-p: 1rem;
 }
 
 *{
@@ -169,6 +173,7 @@ a:first-child {
 .dividerCarta img {
     filter: inherit;
     border-radius: 0.7rem;
+    position: relative;
 }
 
 .dividerCarta h2{
@@ -514,8 +519,17 @@ footer{
     .title{
         width: 90%;
     }
+    .title h1{
+        font-size: var(--font-text-responsive-title);
+    }
     .divider hr{
         width: 5rem;
+    }
+    .divider i {
+        font-size: var(--font-text-responsive-p);
+    }
+    .title p{
+        font-size: var(--font-text-responsive-p);
     }
     .dividerCarta img{
         border-radius: 0px;
@@ -523,7 +537,9 @@ footer{
         height: 80%;
     }
     .dividerCarta h2{
-        font-size: 1rem;
+        font-size: var(--font-text-responsive-p);
+        width: 100%;
+        text-align: center;
     }
     .title-carta{
         gap: 1rem;
@@ -532,16 +548,14 @@ footer{
         width: 3rem;
     }
     .title-carta h1{
-        font-size: var(--font-sizeSubTitle);
-    }
-    .title-carta h1{
-        font-size: var(--font-sizeCarta);
+        font-size: var(--font-text-responsive-title);
     }
     .slider-container{
         max-width: 250px;
     }
     .slider-container img{
         width: 250px;
+        margin-right: 9rem;
     }
     .carta-menu{
         flex-wrap: wrap;
@@ -554,11 +568,11 @@ footer{
         width: 80%;
     }
     .texto-destacado h1{
-        font-size: 1.5rem;
+        font-size: var(--font-text-responsive-sub);
     }
     .texto-destacado p {
         text-align: center;
-        font-size: var(--font-sizeP);
+        font-size: var(--font-text-responsive-p);
     }
     .container-caracteristicas{
         width: 100%;
