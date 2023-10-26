@@ -1,11 +1,30 @@
-arrowIcons = document.querySelectorAll(".slider-container i");
-const carousel = document.querySelector(".slider");
-fristImg = carousel.querySelectorAll("img")[0];
+const arrowRight = document.querySelector("#right");
+const arrowLeft = document.querySelector("#left");
+const slider = document.querySelector(".slider--inner");
+const sliderImg = slider.querySelectorAll("img");
+let index = 1;
+let porcentaje;
 
-let firstImgWidth = 405 + 16;
+arrowRight.addEventListener("click", () => {
+  porcentaje = index * -100;
+  slider.style.transform = "translateX(" + porcentaje + "%)";
+  console.log(porcentaje);
+  index++;
+  if (index > sliderImg.length - 1) {
+    index = 0;
+  }
+  console.log(index);
+});
 
-arrowIcons.forEach((icon) => {
-  icon.addEventListener("click", () => {
-    carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
-  });
+index = -1
+
+arrowLeft.addEventListener("click", () => {
+  porcentaje = index * -100;
+  slider.style.transform = "translateX(" + porcentaje + "%)";
+  console.log(porcentaje);
+  index++;
+  if (index > sliderImg.length - 1) {
+    index = 0;
+  }
+  console.log(index);
 });

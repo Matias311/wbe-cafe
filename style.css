@@ -276,7 +276,7 @@ a:first-child {
     position: relative;
 }
 
-.slider-container i{
+.slider-container i{ 
     color: var(--textSubTitle);
     width: 2rem;
     height: 2rem;
@@ -297,22 +297,21 @@ a:first-child {
 }
 
 .slider{
-    white-space: nowrap;
-    cursor: pointer;
     overflow: hidden;
-    scroll-behavior: smooth;
-    border-radius: 2%;
 }
 
-.slider img {
-    border-radius: 2%;
-    width: 400px;
-    margin-left: 1rem;
+.slider--inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
-.slider img:first-child{
-   margin-left: 0rem;
+.slider--inner img {
+    border-radius: 2%;
+    width: 100%;
 }
+
+/* Fin slider */
 
 .texto-destacado{
     width: 30%;
@@ -552,10 +551,6 @@ footer{
     }
     .slider-container{
         max-width: 250px;
-    }
-    .slider-container img{
-        width: 250px;
-        margin-right: 9rem;
     }
     .carta-menu{
         flex-wrap: wrap;
